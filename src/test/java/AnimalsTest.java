@@ -5,8 +5,8 @@ import ru.QA32.CatsBreed;
 
 public class AnimalsTest {
     @Test
-    public void calculateAgeTest(String dateOfBirth) {
+    public void calculateAgeTest() {
         Cat Mysia = new Cat( CatsBreed.METIS,"Муся", "ж", "2020-07-11", 2.9);
-        Assertions.assertEquals(4, 4);
+        Assertions.assertEquals(4, Mysia.calculateAge("2020-07-11"));
     }
 }
